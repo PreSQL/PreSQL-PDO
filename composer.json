@@ -1,0 +1,21 @@
+{
+    "name": "presql/presql-pdo",
+    "description": "SQL preprocessor for PDO",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+          "name": "Martynas Januškauskas",
+          "email": "martynas.janu@gmail.com"
+        },
+        {
+            "name": "Simas Godovan",
+            "email": "simas@godovan.lt"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
