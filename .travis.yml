@@ -9,5 +9,11 @@ before_install:
 install:
   - travis_retry composer install --no-interaction --prefer-source
 
+before_script:
+  - mkdir -p ./build/coverage
+
 script:
-  - phpunit --verbose
+  - ./vendor/bin/phpunit --verbose --coverage-clover ./build/coverage/clover.xml
+
+after_success:
+  - ./vendor/bin/coveralls -v
