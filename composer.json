@@ -29,8 +29,8 @@
         "ext-PDO": "*"
     },
     "autoload": {
-        "psr-0": {
-            "PreSQL": "src"
+        "psr-4": {
+            "PreSQL\\": "./src/PreSQL"
         }
     }
 }
