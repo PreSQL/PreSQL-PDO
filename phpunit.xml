@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+    <filter>
+        <whitelist>
+            <directory>./src/PreSQL</directory>
+        </whitelist>
+        <blacklist>
+            <directory>./vendor</directory>
+            <directory>./tests</directory>
+        </blacklist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="./build/coverage/clover.xml"/>
+    </logging>
+    <testsuites>
+        <testsuite name="PreSQL">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
