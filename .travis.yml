@@ -10,7 +10,7 @@ install:
   - travis_retry composer install --no-interaction --prefer-source
 
 before_script:
-  - mkdir -p ./build/coverage
+  - mkdir -p ./build/logs
 
 script:
   - ./vendor/bin/phpunit --verbose
